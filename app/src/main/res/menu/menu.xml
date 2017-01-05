@@ -4,6 +4,4 @@
     <item android:id="@+id/single" android:title="单行"/>
     <item android:id="@+id/two" android:title="两行"/>
     <item android:id="@+id/more" android:title="瀑布流"/>
-
-
 </menu>

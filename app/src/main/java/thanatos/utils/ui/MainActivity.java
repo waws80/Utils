@@ -7,6 +7,7 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.widget.Toast;
 
 import java.util.List;
@@ -16,12 +17,11 @@ import thanatos.utils.R;
 import thanatos.utils.base.BaseRVAdapter;
 import thanatos.utils.utils.ItemDecoration_main_rv;
 import thanatos.utils.utils.List_main_rv_data;
-import thanatos.utils.utils.customview.DampRecyclerView;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
 
-    private DampRecyclerView mRecyclerView;
+    private RecyclerView mRecyclerView;
 
     private SwipeRefreshLayout refreshLayout;
 
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mRecyclerView= (DampRecyclerView) findViewById(R.id.rv_main);
+        mRecyclerView= (RecyclerView) findViewById(R.id.rv_main);
         refreshLayout= (SwipeRefreshLayout) findViewById(R.id.srfl_main);
         final List<String> stringList= List_main_rv_data.getInstance().initList();
         final GridLayoutManager gridLayoutManager=new GridLayoutManager(this,2);

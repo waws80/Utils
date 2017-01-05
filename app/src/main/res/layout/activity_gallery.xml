@@ -11,4 +11,9 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="thanatos.utils.ui.Gallery">
 
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/gallery_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
 </RelativeLayout>

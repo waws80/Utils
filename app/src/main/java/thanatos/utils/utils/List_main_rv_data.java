@@ -33,6 +33,7 @@ private static List_main_rv_data listMainRvData;
         stringList.add("JPEG测试");
         stringList.add("相册");
         stringList.add("RV拖动");
+        stringList.add("分布滑动");
         stringList.add("我是底部");
         return stringList;
     }

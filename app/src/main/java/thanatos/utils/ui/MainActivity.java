@@ -91,6 +91,10 @@ public class MainActivity extends AppCompatActivity {
                 intent.setClass(this,DragViewActivity.class);
                 startActivity(intent);
                 break;
+            case 4:
+                intent.setClass(this,DistributeActivity.class);
+                startActivity(intent);
+                break;
         }
     }
 }

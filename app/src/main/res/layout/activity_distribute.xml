@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/activity_distribute"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="thanatos.utils.ui.DistributeActivity">
+
+    <thanatos.utils.utils.customview.SlidingCardLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:background="@mipmap/ic_launcher"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_distribute_one" />
+
+    </thanatos.utils.utils.customview.SlidingCardLayout>
+
+    <thanatos.utils.utils.customview.SlidingCardLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_activity_distribute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </thanatos.utils.utils.customview.SlidingCardLayout>
+
+</android.support.design.widget.CoordinatorLayout>

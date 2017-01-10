@@ -1,5 +1,6 @@
 package thanatos.utils.base;
 
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.util.SparseArray;
 import android.view.View;
@@ -16,7 +17,7 @@ import java.util.List;
 public abstract class BaseRVAdapter  extends RecyclerView.Adapter<BaseRVAdapter
         .MyRecyclerViewHolder>{
 
-    private  List<?> dataList;
+    public   List<?> dataList;
 
 
     private static final int HEADER=0x100;
@@ -24,6 +25,8 @@ public abstract class BaseRVAdapter  extends RecyclerView.Adapter<BaseRVAdapter
 
 
     private OnItemClick itemClick;
+
+    private Context mContext;
 
     public BaseRVAdapter(List<?> dataList) {
         this.dataList = dataList;
@@ -58,7 +61,7 @@ public abstract class BaseRVAdapter  extends RecyclerView.Adapter<BaseRVAdapter
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (itemClick==null) throw  new NullPointerException("itemClick is null");
+                if (itemClick==null) return;
                 itemClick.itemClick(dataList.get(position),position);
             }
         });

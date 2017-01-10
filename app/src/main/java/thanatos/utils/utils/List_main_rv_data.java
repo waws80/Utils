@@ -30,9 +30,9 @@ private static List_main_rv_data listMainRvData;
     public List<String> initList(){
         List<String> stringList=new ArrayList<>();
         stringList.add("我是头部");
-
+        stringList.add("JPEG测试");
         stringList.add("相册");
-
+        stringList.add("RV拖动");
         stringList.add("我是底部");
         return stringList;
     }

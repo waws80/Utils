@@ -80,7 +80,15 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "我是头部", Toast.LENGTH_SHORT).show();
                 break;
             case 1:
+                intent.setClass(this,JPEGActivity.class);
+                startActivity(intent);
+                break;
+            case 2:
                 intent.setClass(this,Gallery.class);
+                startActivity(intent);
+                break;
+            case 3:
+                intent.setClass(this,DragViewActivity.class);
                 startActivity(intent);
                 break;
         }
